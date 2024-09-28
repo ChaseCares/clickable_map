@@ -1,7 +1,7 @@
 // Conventional map
 function stateClicked(stateName) {
 	const output = document.getElementById('output');
-	output.innerHTML = `<h6>You clicked on ${stateName}</h6>`;
+	output.innerHTML = `<h3>You clicked on ${stateName}</h3>`;
 
 	if (stateName === 'FL' || stateName === 'Florida') {
 		window.location.href = 'https://www.youtube.com/watch?v=aOLYSELQfpA';
