@@ -84,6 +84,12 @@ function initializeMap() {
 				stateLink.appendChild(br);
 			});
 
+			if (state.notes) {
+				const stateNotes = document.createElement('p');
+				stateNotes.textContent = state.notes;
+				stateLink.appendChild(stateNotes);
+			}
+
 			currentActiveState = newState;
 		};
 
@@ -182,12 +188,8 @@ function stateInfo() {
 			name: 'Vermont',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blansk',
-				},
-				{
-					name: 'Vermont link2',
-					link: 'about:blasnk',
+					name: 'Medicaid',
+					link: 'https://dvha.vermont.gov/sites/dvha/files/documents/FINAL%20VERMONT%20PDL_Effective_7_05_24_V2.pdf',
 				},
 			],
 			shape:
@@ -199,8 +201,8 @@ function stateInfo() {
 			name: 'Alaska',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://health.alaska.gov/dhcs/Documents/pdl/Documents/PDL_Effective-Date_20240601.pdf',
 				},
 			],
 			shape:
@@ -212,8 +214,8 @@ function stateInfo() {
 			name: 'Maine',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.mainecarepdl.org/content/dam/ffs-medicare/me/pdl/pdlmainecriteria-AUG%202024.pdf',
 				},
 			],
 			shape:
@@ -226,8 +228,8 @@ function stateInfo() {
 			name: 'New Hampshire',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://nh.magellanrx.com/documents/51139/68986/NHRx_PDL.pdf/8eb713b0-cc1d-7fd9-a0c3-12988cb1c1b7?t=1677610996864',
 				},
 			],
 			shape:
@@ -239,8 +241,8 @@ function stateInfo() {
 			name: 'Washington',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.hca.wa.gov/assets/billers-and-providers/apple-health-preferred-drug-list.xlsx',
 				},
 			],
 			shape:
@@ -252,8 +254,8 @@ function stateInfo() {
 			name: 'Montana',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://medicaidprovider.mt.gov/docs/pharmacy/PreferredDrugListMarch2024.pdf',
 				},
 			],
 			shape:
@@ -265,8 +267,8 @@ function stateInfo() {
 			name: 'North Dakota',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://ndmedicaid.acentra.com/wp-content/uploads/sites/17/2024/05/NDPDL.pdf',
 				},
 			],
 			shape:
@@ -278,8 +280,8 @@ function stateInfo() {
 			name: 'Minnesota',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://mn.gov/dhs/assets/preferred-drug-list-2024-08-01_tcm1053-638332.pdf#false',
 				},
 			],
 			shape:
@@ -291,8 +293,8 @@ function stateInfo() {
 			name: 'Wisconsin',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.hca.wa.gov/assets/billers-and-providers/apple-health-preferred-drug-list.xlsx',
 				},
 			],
 			shape:
@@ -304,8 +306,8 @@ function stateInfo() {
 			name: 'Michigan',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://michigan.magellanrx.com/provider/external/medicaid/mi/doc/en-us/MIRx_PDL.pdf',
 				},
 			],
 			shape:
@@ -317,8 +319,8 @@ function stateInfo() {
 			name: 'New York',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://newyork.fhsc.com/downloads/providers/NYRx_PDP_PDL.pdf',
 				},
 			],
 			shape:
@@ -331,8 +333,8 @@ function stateInfo() {
 			name: 'Massachusetts',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglist.do',
 				},
 			],
 			shape:
@@ -345,8 +347,8 @@ function stateInfo() {
 			name: 'Rhode Island',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://eohhs.ri.gov/sites/g/files/xkgbur226/files/2024-01/PDL%2001.17.2024.pdf',
 				},
 			],
 			shape:
@@ -358,8 +360,8 @@ function stateInfo() {
 			name: 'Idaho',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://publicdocuments.dhw.idaho.gov/WebLink/DocView.aspx?id=702&dbid=0&repo=PUBLIC-DOCUMENTS',
 				},
 			],
 			shape:
@@ -371,8 +373,8 @@ function stateInfo() {
 			name: 'Wyoming',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://health.wyo.gov/wp-content/uploads/2024/02/PDL2.7.24.pdf',
 				},
 			],
 			shape:
@@ -384,9 +386,12 @@ function stateInfo() {
 			name: 'South Dakota',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://prdgov-rxadmin.optum.com/rxadmin/SDM/Prior_authorization.html',
 				},
+			],
+			notes: [
+				'If medication is NOT listed on South Dakota PDL then there is no restriction for the entire class of medication',
 			],
 			shape:
 				'M476.44687,204.02465L476.39947,203.44378L473.50376,198.59834L475.36399,193.88623L476.85672,187.99969000000002L474.07484999999997,185.91998L473.68969,183.17652L474.48208999999997,180.62217L477.6706,180.63737L477.54751999999996,175.63123000000002L477.21421999999995,145.45698000000002L476.59648999999996,141.6894L472.52416999999997,138.35847L471.54154,136.68151L471.47904,135.07269L473.50115999999997,133.54328999999998L475.03337999999997,131.87761999999998L475.27833999999996,129.22082999999998L417.02124999999995,127.62047999999997L362.22203999999994,124.17138999999997L356.89676999999995,187.86257999999998L371.4870399999999,188.76637999999997L391.43688999999995,189.97198999999998L409.17993999999993,190.90058L432.95669999999996,192.20416L444.9394,191.77952L446.90569999999997,194.0247L452.10033999999996,197.27805L452.86422999999996,198.0008L457.40567,196.54799L463.94621,195.93308L465.62151,197.26935L469.82602,198.86548L472.77108000000004,200.50131L473.17006000000003,201.98512L474.20955000000004,204.226L476.44692000000003,204.02464Z',
@@ -397,8 +402,8 @@ function stateInfo() {
 			name: 'Iowa',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.iowamedicaidpdl.com/content/dam/ffs-medicare/ia/IowaWEBPDL_Oct2024_v6.pdf',
 				},
 			],
 			shape:
@@ -410,8 +415,8 @@ function stateInfo() {
 			name: 'Illinois',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://hfs.illinois.gov/content/dam/soi/en/web/hfs/sitecollectiondocuments/pdl01012024.pdf',
 				},
 			],
 			shape:
@@ -423,8 +428,8 @@ function stateInfo() {
 			name: 'Indiana',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://prdgov-rxadmin.optum.com/rxadmin/INM/20240901_INM_SUPDL%20(2)_Final.pdf',
 				},
 			],
 			shape:
@@ -436,8 +441,8 @@ function stateInfo() {
 			name: 'Ohio',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/PHM/drug-coverage/20241001_UPDL_v1_Approved.pdf',
 				},
 			],
 			shape:
@@ -449,8 +454,8 @@ function stateInfo() {
 			name: 'Pennsylvania',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.papdl.com/content/dam/ffs-medicare/pa/pdl/Penn-Statewide-PDL-2024v10.pdf',
 				},
 			],
 			shape:
@@ -463,8 +468,8 @@ function stateInfo() {
 			name: 'New Jersey',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://fm.formularynavigator.com/FBO/4/New_Jersey_PDL_English.pdf',
 				},
 			],
 			shape:
@@ -477,8 +482,8 @@ function stateInfo() {
 			name: 'Connecticut',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.ctdssmap.com/CTPortal/Portals/0/StaticContent/Publications/CT_PDL_medicaid.pdf',
 				},
 			],
 			shape:
@@ -490,8 +495,8 @@ function stateInfo() {
 			name: 'Oregon',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.oregon.gov/oha/HSD/OHP/Tools/PDL_2024_07_01_v1.pdf',
 				},
 			],
 			shape:
@@ -503,8 +508,8 @@ function stateInfo() {
 			name: 'Nevada',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://fm.formularynavigator.com/FBO/4/Nevada_PDL_English.pdf',
 				},
 			],
 			shape:
@@ -516,8 +521,8 @@ function stateInfo() {
 			name: 'Colorado',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://hcpf.colorado.gov/sites/hcpf/files/10-01-24%20PDL-V2.pdf',
 				},
 			],
 			shape:
@@ -529,8 +534,8 @@ function stateInfo() {
 			name: 'Nebraska',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://nebraska.fhsc.com/downloads/PDL/NE_PDL-20240119.pdf',
 				},
 			],
 			shape:
@@ -542,8 +547,8 @@ function stateInfo() {
 			name: 'Missouri',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://mydss.mo.gov/media/pdf/list-preferred-non-preferred-products',
 				},
 			],
 			shape:
@@ -555,8 +560,8 @@ function stateInfo() {
 			name: 'Kentucky',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.chfs.ky.gov/agencies/dms/dpo/ppb/Documents/Kentucky%20Medicaid%20PDL%2001.01.2024_v2%20FINAL.pdf',
 				},
 			],
 			shape:
@@ -568,8 +573,8 @@ function stateInfo() {
 			name: 'West Virgina',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://dhhr.wv.gov/bms/BMS%20Pharmacy/Documents/Preferred%20Drug%20List/2024/WV%20PDL%202024.Q4a%20draft%20v4.pdf',
 				},
 			],
 			shape:
@@ -581,8 +586,8 @@ function stateInfo() {
 			name: 'Virgina',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.virginiamedicaidpharmacyservices.com/provider/external/medicaid/vamps/doc/en-us/VAmed-PDLquick-20241001.pdf',
 				},
 			],
 			shape:
@@ -595,8 +600,8 @@ function stateInfo() {
 			name: 'Delaware',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://medicaidpublications.dhss.delaware.gov/docs/DesktopModules/Bring2mind/DMX/API/Entries/Download?Command=Core_Download&EntryId=940&language=en-US&PortalId=0&TabId=94',
 				},
 			],
 			shape:
@@ -609,8 +614,8 @@ function stateInfo() {
 			name: 'Maryland',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://health.maryland.gov/mmcp/pap/docs/PDL/PDL-Effective-7.1.2024_Updated-8.15.2024.pdf',
 				},
 			],
 			shape:
@@ -622,8 +627,8 @@ function stateInfo() {
 			name: 'California',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://medi-calrx.dhcs.ca.gov/cms/medicalrx/static-assets/documents/provider/forms-and-information/cdl/Medi-Cal_Rx_Contract_Drugs_List_FINAL.pdf',
 				},
 			],
 			shape:
@@ -635,8 +640,8 @@ function stateInfo() {
 			name: 'Utah',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.molinahealthcare.com/-/media/Molina/PublicWebsite/PDF/members/ut/en-us/Medicaid/UtahMedicaidDrugList.pdf',
 				},
 			],
 			shape:
@@ -648,8 +653,8 @@ function stateInfo() {
 			name: 'New Mexico',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.uhc.com/communityplan/assets/plandocuments/findadrug/new-mexico/NM-Medicaid-PDL.pdf',
 				},
 			],
 			shape:
@@ -661,8 +666,8 @@ function stateInfo() {
 			name: 'Kansas',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.kdhe.ks.gov/DocumentCenter/View/420/Preferred-Drug-List-PDF?bidId=',
 				},
 			],
 			shape:
@@ -674,8 +679,8 @@ function stateInfo() {
 			name: 'Arkansas',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://ar.magellanrx.com/documents/268611/269354/Preferred+Drug+List.pdf/533764a9-1715-6daf-8eb5-bbe71e53ca1d?t=1688593048729',
 				},
 			],
 			shape:
@@ -687,8 +692,8 @@ function stateInfo() {
 			name: 'Tennessee',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.optumrx.com/content/dam/openenrollment/pdfs/Tenncare/home-page/preferred-drug-list/Preferred%20Drug%20List%20(PDL).pdf',
 				},
 			],
 			shape:
@@ -700,8 +705,8 @@ function stateInfo() {
 			name: 'North Carolina',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://medicaid.ncdhhs.gov/nc-medicaids-preferred-drug-list-pdl-revised-sept-1-2024/download?attachment',
 				},
 			],
 			shape:
@@ -713,8 +718,8 @@ function stateInfo() {
 			name: 'South Carolina',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://southcarolina.fhsc.com/downloads/provider/SCpdl_listing_20240701v2.pdf',
 				},
 			],
 			shape:
@@ -725,12 +730,12 @@ function stateInfo() {
 			path_start: { x: 805, y: 248 },
 			abbr_loc: { x: 860, y: 290 },
 			name: 'District of Columbia',
-			links: [
-				{
-					name: 'Vermont link1',
-					link: 'about:blank',
-				},
-			],
+			// links: [
+			// 	{
+			// 		name: 'Medicaid',
+			// 		link: 'about:blank',
+			// 	},
+			// ],
 			shape:
 				'M805.81945,250.84384L803.9611699999999,249.01967L802.72854,248.33337999999998L804.1715499999999,246.31090999999998L807.0606399999999,248.25940999999997L805.81945,250.84383999999997Z',
 		},
@@ -740,8 +745,8 @@ function stateInfo() {
 			name: 'Arizona',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.uhcprovider.com/content/dam/provider/docs/public/commplan/az/pharmacy/AZ-Preferred-Drug-List-Medicaid.pdf',
 				},
 			],
 			shape:
@@ -753,9 +758,16 @@ function stateInfo() {
 			name: 'Oklahoma',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://oklahoma.gov/content/dam/ok/en/okhca/docs/providers/types/pharmacy/drug-lists/08.12.2024%20-%20Maintenance%20Drug%20List.pdf',
 				},
+				{
+					name: 'Maintenance drug list',
+					link: 'https://oklahoma.gov/ohca/providers/types/pharmacy/prior-authorization/2024.html',
+				},
+			],
+			notes: [
+				'Oklahoma has a maintenance drug list and prior authorization or specific criteria for most brand name medications',
 			],
 			shape:
 				'M380.34313,320.82146L363.65894999999995,319.54815L362.77872999999994,330.50058L383.2441099999999,331.65746L415.2996599999999,332.96106000000003L412.9650599999999,357.37971000000005L412.5078099999999,375.21228L412.7364399999999,376.81264000000004L417.0802699999999,380.47060000000005L419.1378699999999,381.61371L419.82373999999993,381.38509000000005L420.50960999999995,379.32748000000004L421.88134999999994,381.15647L423.9389499999999,381.15647L423.9389499999999,379.78473L426.6824199999999,381.15647L426.2251799999999,385.04305L430.3403899999999,385.27167L432.8552299999999,386.41479L436.9704399999999,387.10066L439.4852899999999,388.92964L441.7715199999999,386.87204L445.2008599999999,387.5579L447.71570999999994,390.98724000000004L448.63018999999997,390.98724000000004L448.63018999999997,393.27347000000003L450.91641999999996,393.95933L453.20264,391.67311L455.03162999999995,392.35897L457.54646999999994,392.35897L458.4609699999999,394.87383L464.7620399999999,396.9528L466.1337799999999,396.26694000000003L467.9627599999999,392.15173000000004L469.10586999999987,392.15173000000004L470.2489899999999,394.20933L474.36419999999987,394.89520000000005L478.0221499999999,396.26694000000003L480.9942499999999,397.18143000000003L482.8232399999999,396.26694000000003L483.5090999999999,393.75209L487.8529299999999,393.75209L489.9105299999999,394.66658L492.6539999999999,392.60897L493.7971199999999,392.60897L494.4829899999999,394.20933L498.59818999999993,394.20933L500.19854999999995,392.15173000000004L502.02753999999993,392.60897000000006L504.0851399999999,395.12383000000005L507.2858499999999,396.9528000000001L510.48657999999995,397.86730000000006L512.42766,398.98623000000003L512.03856,361.76922L510.66680999999994,350.79524000000004L510.50634999999994,341.9229L509.06645999999995,335.38517L508.2882599999999,328.20553L508.2201599999999,324.38931L496.0833199999999,324.70805L449.6732799999999,324.25081L404.63436999999993,322.19319L380.34316999999993,320.82146Z',
@@ -766,8 +778,8 @@ function stateInfo() {
 			name: 'Louisiana',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://ldh.la.gov/assets/HealthyLa/Pharmacy/PDL.pdf',
 				},
 			],
 			shape:
@@ -779,8 +791,8 @@ function stateInfo() {
 			name: 'Mississippi',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://medicaid.ms.gov/wp-content/uploads/2024/08/MS-PDL-10012024_Future-Dated-for-PT.pdf',
 				},
 			],
 			shape:
@@ -792,8 +804,8 @@ function stateInfo() {
 			name: 'Alabama',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://medicaid.alabama.gov/documents/4.0_Programs/4.3_Pharmacy-DME/4.3.7_Preferred_Drug_List/4.3.7_PDL_Alpha_7-1-24.pdf',
 				},
 			],
 			shape:
@@ -805,21 +817,42 @@ function stateInfo() {
 			name: 'Georgia',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://dch.georgia.gov/document/document/pdl-drug-name-5-1-24/download',
 				},
 			],
 			shape:
 				'M672.29229,355.5518L672.29229,357.73422L672.45395,359.83582L673.10059,363.23069000000004L676.49547,371.15206000000006L678.9203799999999,381.01337000000007L680.3753199999999,387.15648000000004L681.9919299999999,392.00629000000004L683.44688,398.95770000000005L685.54847,405.26247000000006L688.13504,408.65735000000006L688.62002,412.0522200000001L690.55995,412.86052000000007L690.7216099999999,414.9621200000001L688.9433399999999,419.8119300000001L688.45836,423.0451500000001L688.2967,424.9850800000001L689.91331,429.3499200000001L690.23663,434.6847200000001L689.42832,437.1096300000001L690.07497,437.9179400000001L691.5299200000001,438.7262400000001L691.7346200000001,441.9443300000001L693.9676300000001,445.2938600000001L696.2180700000001,447.45591000000013L704.1394500000001,447.6175700000001L714.9592000000001,446.9709300000001L736.4715900000001,445.67765000000014L741.9173100000002,445.00328000000013L746.4945600000002,445.0309800000001L746.6562200000002,447.94087000000013L749.2427900000002,448.7491700000001L749.5661100000002,444.3843300000001L747.9495000000002,439.8578300000001L749.0811300000001,438.2412300000001L754.9009100000002,439.04953000000006L759.8783200000001,439.3673100000001L759.1029000000001,433.0685200000001L761.3661400000001,423.0455700000001L762.8210900000001,418.84239000000014L762.3361000000001,416.2558300000001L765.6705100000001,410.0115300000001L765.1602100000001,408.6598500000001L763.2468000000001,409.36443000000014L760.6602400000002,408.07113000000015L760.0135900000001,405.96954000000017L758.7203100000002,402.41301000000016L756.4570500000002,400.31142000000017L753.8704900000002,399.6647800000002L752.2538800000002,394.81496000000016L749.3288700000002,388.4799600000002L745.1257000000002,386.5400300000002L743.0241000000002,384.60010000000017L741.7308100000002,382.0135300000002L739.6292300000002,380.07360000000017L737.3659800000003,378.78031000000016L735.1027300000003,375.87042000000014L732.0311800000003,373.60718000000014L727.5046700000003,371.82890000000015L727.0196900000003,370.3739600000001L724.5947800000004,367.4640700000001L724.1098000000004,366.0091200000001L720.7149200000005,361.0386400000001L717.1950500000005,361.1378400000001L713.4401400000005,358.7817000000001L712.0218600000005,357.48842000000013L711.6985400000005,355.7101500000001L712.5693400000006,353.77023000000014L714.7959800000006,352.66009000000014L714.1620400000005,350.56287000000015L672.2922900000005,355.5518000000001Z',
 		},
 		{
+			// lans: AlohaCare, HMSA, Kaiser Permanente, Ohana, UnitedHealthCare
 			abbr: 'HI',
 			abbr_loc: { x: 280, y: 560 },
 			name: 'Hawaii',
 			links: [
 				{
-					name: 'Vermont link1',
-					link: 'about:blank',
+					name: 'Hawaii Medicaid plans',
+					link: 'https://medquest.hawaii.gov/en/plans-providers/pharmacy/drug-coverage/mco-formulary-search.html',
+				},
+				{
+					name: 'AlohaCare',
+					link: 'https://www.alohacare.org/Providers/Formulary_QUEST',
+				},
+				{
+					name: 'HMSA',
+					link: 'https://storestuff.s3-accelerate.amazonaws.com/14017_155101738?response-content-disposition=inline%3B%20filename%3D%22HMSA%2520QUEST%2520Integration%2520Managed%2520Medicaid%2520Formulary%25202024-0901.pdf%22%3B%20filename%2A%3DUTF-8%27%27HMSA%2520QUEST%2520Integration%2520Managed%2520Medicaid%2520Formulary%25202024-0901.pdf&AWSAccessKeyId=AKIAJBNEEVWEAALCCECQ&Expires=1758910628&Signature=6gGHmaxZBwRkWsT9AnZ8I%2BzWKtY%3D',
+				},
+				{
+					name: 'Kaiser Permanente',
+					link: 'https://healthy.kaiserpermanente.org/content/dam/kporg/final/documents/formularies/hi/quest-drug-formulary-hi-en.pdf',
+				},
+				{
+					name: 'Ohana',
+					link: 'https://www.wellcare.com/Hawaii/Members/Medicaid-Plans/QUEST-Integration/QUEST-Integration-Settings/Quest-Integration-Search-Page',
+				},
+				{
+					name: 'UnitedHealthCare',
+					link: 'https://www.uhccommunityplan.com/hi/medicaid/quest-integration-program/lookup-tools#collapse-1958499300',
 				},
 			],
 			shape:
@@ -831,12 +864,8 @@ function stateInfo() {
 			name: 'Texas',
 			links: [
 				{
-					name: 'Texas link 1',
-					link: 'about:blank',
-				},
-				{
-					name: 'Texas link 2',
-					link: 'about:blank',
+					name: 'Medicaid',
+					link: 'https://www.txvendordrug.com/sites/default/files/docs/2024-0808-preferred-drug-list_2.pdf',
 				},
 			],
 			shape:
@@ -848,8 +877,8 @@ function stateInfo() {
 			name: 'Florida',
 			links: [
 				{
-					name: 'Learn more about florida',
-					link: 'https://www.youtube.com/watch?v=aOLYSELQfpA',
+					name: 'Medicaid',
+					link: 'https://ahca.myflorida.com/content/download/22289/file/June%202024%20P%26T%20PDL%2008.29.2024.pdf',
 				},
 			],
 			shape:
