@@ -1,4 +1,4 @@
-# A simple click the map demo
+# A simple clickable map demo
 
 Modified from:
 
