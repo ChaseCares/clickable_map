@@ -1,136 +1,42 @@
-h1 {
-	color: #999;
-	text-align: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1;
-	background: rgba(255, 255, 255, 0.8);
-	padding: 0;
-	margin: 0;
-}
-
-h3 {
-	padding: 0;
-	margin: 0;
-}
-
-#output {
-	color: #333;
-	margin: 0 auto;
-	padding: 0px;
-}
-
-/* Conventional map */
-
 body {
 	font-family: Arial, sans-serif;
 	text-align: center;
-	padding-top: 100px;
 }
+
 svg {
-	max-width: 80%;
+	width: 30%;
 	height: auto;
 }
+
+h1,
+h2,
+h4 {
+	color: #272727;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
 .state {
 	fill: #ccc;
-	stroke: #fff;
-	stroke-width: 1;
-	cursor: pointer;
-	transition: fill 0.3s;
-
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	stroke-linejoin: round;
+	/* position: relative;
+	z-index: 0; */
 }
 
-/* Handled mobile touch events */
-.state:hover {
-	fill: #90ee90;
-}
-.state:active {
-	fill: #90ee90;
+.abbrText {
+	fill: #000;
 }
 
-/* Hexagon map */
-.svg g {
-	cursor: pointer;
-}
-.svg g polygon {
-	stroke: white;
-	stroke-width: 4;
-	opacity: 0.5;
-	transition: opacity 200ms ease-in;
-}
-.svg g text {
-	text-anchor: middle;
-	transition: opacity 200ms ease-in;
-}
-.svg g text:not(.data) {
-	fill: white;
+.hovered {
+	fill: #279d21;
+	stroke-width: 2;
 }
 
-.svg g .state-name {
-	opacity: 0;
-}
-.svg g .state-abbr {
-	opacity: 1;
-}
-.svg g.hover .state-name,
-.svg g.hover .data {
-	-webkit-animation: fade-in 300ms ease-in 200ms forwards;
-	animation: fade-in 300ms ease-in 200ms forwards;
-}
-.svg g.hover .state-abbr {
-	-webkit-animation: fade-out 300ms ease-in 200ms forwards;
-	animation: fade-out 300ms ease-in 200ms forwards;
-}
-.svg g.hover polygon {
-	fill: #90ee90;
-	opacity: 1;
-	transition: fill 200ms ease-in;
-	-webkit-animation: scale-polygon 300ms ease-in forwards;
-	animation: scale-polygon 300ms ease-in forwards;
+.active {
+	fill: #94068d;
+	stroke-width: 2;
 }
 
-@-webkit-keyframes scale-polygon {
-	from {
-		transform: scale(1);
-		stroke-width: 4;
-	}
-	to {
-		transform: scale(2);
-		stroke-width: 2;
-	}
-}
-
-@keyframes scale-polygon {
-	from {
-		transform: scale(1);
-		stroke-width: 4;
-	}
-	to {
-		transform: scale(2);
-		stroke-width: 2;
-	}
-}
-@-webkit-keyframes fade-in {
-	to {
-		opacity: 1;
-	}
-}
-@keyframes fade-in {
-	to {
-		opacity: 1;
-	}
-}
-@-webkit-keyframes fade-out {
-	to {
-		opacity: 0;
-	}
-}
-@keyframes fade-out {
-	to {
-		opacity: 0;
-	}
+#stateLinks {
+	justify-content: center;
 }
